@@ -44,7 +44,7 @@ private findselectedkey(links:INavLink[], selectedKey:string):boolean
         lexp= this.findselectedkey(l.links,selectedKey);
         l.isExpanded =lexp||l.isExpanded;
       }
-      return l.isExpanded
+      return l.isExpanded;
     }
   });
     return false;
@@ -64,7 +64,7 @@ private findselectedkey(links:INavLink[], selectedKey:string):boolean
             if(this.selectedKey)
             {
               options.forEach((o: INavLinkGroup): void => {
-                this.findselectedkey(o.links,this.selectedKey.toString())
+                this.findselectedkey(o.links,this.selectedKey.toString());
             });
           }  
             this.setState({
